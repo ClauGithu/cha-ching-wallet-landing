@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ClauGithu.github.io/cha-ching-wallet-landing/sitemap.xml
