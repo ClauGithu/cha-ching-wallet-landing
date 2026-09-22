@@ -221,3 +221,18 @@
   .foot-col a{ display:block; font-size:0.9rem; margin-bottom:9px; text-decoration:none; color:var(--ink-soft); }
   .foot-col a:hover{ color:var(--teal-glow); }
   .foot-bottom{ margin-top:36px; padding-top:20px; border-top:1px solid var(--border); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; font-size:0.78rem; color:var(--ink-faint); }
+
+  /* ---------- Mobile header fix ---------- */
+  @media (max-width:760px){
+    .nav{ padding:12px 16px; gap:10px; }
+    .nav-links{ display:none; }
+    .brand{ font-size:0.92rem; gap:8px; }
+    .brand small{ display:none; }
+    .logo-mark{ width:30px; height:30px; }
+    .lang-toggle button{ padding:5px 10px; font-size:0.66rem; }
+    .btn-sm{ padding:8px 14px; font-size:0.78rem; }
+    .nav-right{ gap:8px; }
+  }
+  @media (max-width:380px){
+    .btn-sm span{ display:none; }
+  }
