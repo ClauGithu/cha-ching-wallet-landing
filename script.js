@@ -39,6 +39,17 @@
         "Lock-screen notifications: announce a promo or nudge someone one step from their reward.",
         "Unified contact: everyone who joins becomes a contact in your conversational CRM."
       ],
+      contactEyebrow: "GET IN TOUCH",
+      contactTitleHtml: "Let's talk about your <em class=\"grad-text\">wallet program</em>.",
+      contactLede: "Send us a note and we'll get back to you with the best next step for your brand.",
+      nameLabel: "Name",
+      namePlaceholder: "Your name",
+      emailLabel: "Email",
+      emailPlaceholder: "you@company.com",
+      messageLabel: "Message / Question",
+      messagePlaceholder: "Tell us a little about your program, timeline, or question.",
+      contactSubmit: "Send message",
+      contactNote: "We usually reply within 24 hours.",
       stepsEyebrow: "PROCESS",
       stepsTitleHtml: "From zero to lock-screen <em class=\"grad-text\">in 4 steps</em>",
       stepsLede: "No long onboarding. No complicated tech. Just results.",
@@ -98,6 +109,17 @@
         "Notificaciones al lock-screen: anuncia promociones o avisa a quien está a un paso de su recompensa.",
         "Contacto unificado: quien se une queda como contacto en tu CRM conversacional."
       ],
+      contactEyebrow: "CONTÁCTANOS",
+      contactTitleHtml: "Hablemos de tu <em class=\"grad-text\">programa wallet</em>.",
+      contactLede: "Envíanos un mensaje y te responderemos con el mejor siguiente paso para tu marca.",
+      nameLabel: "Nombre",
+      namePlaceholder: "Tu nombre",
+      emailLabel: "Correo",
+      emailPlaceholder: "tu@empresa.com",
+      messageLabel: "Mensaje / Pregunta",
+      messagePlaceholder: "Cuéntanos un poco sobre tu programa, tu fecha objetivo o tu pregunta.",
+      contactSubmit: "Enviar mensaje",
+      contactNote: "Normalmente respondemos en menos de 24 horas.",
       stepsEyebrow: "PROCESO",
       stepsTitleHtml: "De cero a lock-screen <em class=\"grad-text\">en 4 pasos</em>",
       stepsLede: "Sin onboarding largo. Sin tecnología complicada. Solo resultados.",
@@ -259,6 +281,18 @@
     });
     var cr = document.getElementById('compatRow'); cr.innerHTML='';
     t.compat.forEach(function(c){ cr.appendChild(el('span', null, c)); });
+
+    document.getElementById('contactEyebrow').textContent = t.contactEyebrow;
+    document.getElementById('contactTitle').innerHTML = t.contactTitleHtml;
+    document.getElementById('contactLede').textContent = t.contactLede;
+    document.getElementById('nameLabel').textContent = t.nameLabel;
+    document.getElementById('emailLabel').textContent = t.emailLabel;
+    document.getElementById('messageLabel').textContent = t.messageLabel;
+    document.getElementById('name').setAttribute('placeholder', t.namePlaceholder);
+    document.getElementById('email').setAttribute('placeholder', t.emailPlaceholder);
+    document.getElementById('message').setAttribute('placeholder', t.messagePlaceholder);
+    document.getElementById('contactSubmit').textContent = t.contactSubmit;
+    document.getElementById('contactNote').textContent = t.contactNote;
 
     document.getElementById('ctaTitle').innerHTML = t.ctaTitleHtml;
     document.getElementById('ctaLede').textContent = t.ctaLede;
