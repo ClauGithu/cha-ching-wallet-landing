@@ -207,10 +207,35 @@
   .compat span{ display:flex; align-items:center; gap:8px; padding:9px 16px; border:1px solid var(--border); border-radius:999px; font-size:0.82rem; font-weight:600; color:var(--ink-soft); }
 
   /* ---------- Final CTA ---------- */
+  .contact-card,
   .cta-final{ border-radius:var(--radius-lg); border:1px solid var(--border-strong); background:linear-gradient(160deg, rgba(3,133,173,0.14), rgba(31,206,171,0.03)); padding:clamp(40px,7vw,68px); text-align:center; }
   .cta-final h2{ font-size:clamp(1.9rem,4vw,2.6rem); }
   .cta-final p{ color:var(--ink-soft); max-width:52ch; margin:14px auto 26px; }
   .cta-final .row{ display:flex; gap:18px; flex-wrap:wrap; align-items:center; justify-content:center; }
+  .contact-card{ text-align:left; }
+  .contact-form{ margin-top:28px; display:grid; gap:16px; max-width:760px; margin-inline:auto; }
+  .contact-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  @media (max-width:700px){ .contact-grid{ grid-template-columns:1fr; } }
+  .field{ display:flex; flex-direction:column; gap:8px; text-align:left; }
+  .field label{ font-family:"JetBrains Mono",monospace; font-size:0.74rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint); }
+  .field input,
+  .field textarea{
+    width:100%;
+    border-radius:16px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,0.86);
+    padding:14px 16px;
+    font:inherit;
+    color:var(--ink);
+    outline:none;
+    box-shadow:0 0 0 0 rgba(3,133,173,0);
+    transition:border-color .2s, box-shadow .2s, transform .2s;
+  }
+  .field textarea{ min-height:150px; resize:vertical; }
+  .field input:focus,
+  .field textarea:focus{ border-color:var(--teal-glow); box-shadow:0 0 0 4px rgba(3,133,173,0.08); }
+  .contact-actions{ display:flex; justify-content:flex-start; margin-top:4px; }
+  .contact-note{ font-size:0.82rem; color:var(--ink-faint); margin:0; }
 
   /* ---------- Footer ---------- */
   footer{ padding-block:44px 40px; border-top:1px solid var(--border); }
